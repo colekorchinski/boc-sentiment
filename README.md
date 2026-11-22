@@ -35,14 +35,16 @@
 
 **2Y yield change (bp) on announcement day, n = 210**
 
-| Model | Tone coefficient | p-value | R² |
+| Model | Effect of a 1 SD tone shift | p-value | R² |
 |---|---|---|---|
 | Rate decision only | n/a | n/a | 0.041 |
-| + Word-count tone (baseline) | 1.62 bp / SD | <0.001 | 0.087 |
-| + LLM forward guidance | 1.75 bp / point | <0.001 | 0.144 |
-| + LLM overall tone | 2.03 bp / point | <0.001 | 0.179 |
+| + Word-count tone (baseline) | 1.62 bp | <0.001 | 0.087 |
+| + LLM forward guidance | 2.42 bp | <0.001 | 0.144 |
+| + LLM overall tone | 2.83 bp | <0.001 | 0.179 |
 
-**Robustness: forward-guidance coefficient**
+*Tone measures are standardized (1 SD) so the methods can be compared directly. In raw LLM units, each 1-point shift moves the 2Y by 1.75 bp (guidance) and 2.03 bp (overall).*
+
+**Robustness: forward-guidance coefficient (bp per 1-point shift)**
 
 | Test | Coefficient | p-value | R² added |
 |---|---|---|---|
